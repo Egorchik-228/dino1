@@ -1,0 +1,71 @@
+.game {
+  width: 800px;
+  height: 220px;
+  border: 1px solid rgb(122, 122, 122);
+  margin: auto;
+  position: relative;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/T-rex.png");
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% { top: 150px; }
+  30% { top: 100px; }
+  50% { top: 50px; }
+  80% { top: 100px; }
+  100% { top: 150px; }
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 120px;
+  left: 580px;
+  background-image: url("../img/cactus.png");
+  background-size: 20px 40px;
+  visibility: hidden; /* Скрываем кактус по умолчанию */
+}
+
+#bird {
+    position: absolute;
+    top: 50px; /* Птица летает на высоте */
+    left: 580px;
+    width: 113px;
+    height: 67px;
+    background-image: url("../img/bird.jpg");
+}
+
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
